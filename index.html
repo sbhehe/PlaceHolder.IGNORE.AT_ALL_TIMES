@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Very Basic 3D Viewer</title>
+<link rel="stylesheet" href="../viewer3d/2.2/style.css" type="text/css">
+<script src="../viewer3d/2.2/viewer3D.js"></script>
+
+<!-- If deployed elsewhere, use:
+<link rel="stylesheet" href="http://developer-autodesk.github.io/viewer3d/2.2/style.css" type="text/css">
+<script src="http://developer-autodesk.github.io/viewer3d/2.2/viewer3D.js"></script>
+ -->
+
+<script>
+  function initialize() {
+    var options = {
+        'document' : './shaver/0.svf',
+        'env':'Local'
+        };
+
+    var viewerElement = document.getElementById('viewer');
+
+    viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerElement, {});
+
+    Autodesk.Viewing.Initializer(options,function() {
+      viewer.initialize();
+      viewer.load(options.document);
+    });
+  }
+</script>
+</head>
+
+<body onload="initialize()">
+  <div id="viewer"></div>
+</body>
+
+</html>
