@@ -28,7 +28,7 @@ http://developer-autodesk.github.io/translated-models/dwfx-sample-house/f0224dd3
 
 You can also download those translated models from this [GitHub repo](https://github.com/Developer-Autodesk/translated-models).
 
-You can translate your own models at [extract.autodesk.io](extract.autodesk.io).
+You can translate your own models at [extract.autodesk.io](http://extract.autodesk.io).
 
 ## Written By
 Shiya Luo
