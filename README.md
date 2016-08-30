@@ -1,5 +1,5 @@
 ## Offline viewing sample for view and data API
-This is a viewer running local files. See [Demo](http://developer-autodesk.github.io/view.and.data-javascript-offline.sample) here.
+This is a viewer running local files. See [Demo](http://developer-autodesk.github.io/viewer-javascript-offline.sample) here.
 
 ## Setup
 To replace the file to be viewed, change the value of `document` in `index.html`.
