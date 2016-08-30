@@ -1,4 +1,6 @@
 ## Offline viewing sample for view and data API
+[![LMV](https://img.shields.io/badge/Viewer-v2.10-green.svg)](https://developer.autodesk.com/api/view-and-data-api/)
+
 This is a viewer running local files. See [Demo](http://developer-autodesk.github.io/viewer-javascript-offline.sample) here.
 
 ## Setup
