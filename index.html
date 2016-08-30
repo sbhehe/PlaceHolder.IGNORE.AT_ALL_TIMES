@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Very Basic 3D Viewer</title>
-<link rel="stylesheet" href="../viewer3d/2.2/style.css" type="text/css">
-<script src="../viewer3d/2.2/viewer3D.js"></script>
-
-<!-- If deployed elsewhere, use:
-<link rel="stylesheet" href="http://developer-autodesk.github.io/viewer3d/2.2/style.css" type="text/css">
-<script src="http://developer-autodesk.github.io/viewer3d/2.2/viewer3D.js"></script>
- -->
-
-<script>
-  function initialize() {
-    var options = {
-        'document' : './shaver/0.svf',
-        'env':'Local'
-        };
-
-    var viewerElement = document.getElementById('viewer');
-
-    viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerElement, {});
-
-    Autodesk.Viewing.Initializer(options,function() {
-      viewer.initialize();
-      viewer.load(options.document);
-    });
-  }
-</script>
+  <meta charset="UTF-8">
+  <title>Very Basic 3D Viewer</title>
+  <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.min.css?v=v2.10" type="text/css">
 </head>
 
-<body onload="initialize()">
-  <div id="viewer"></div>
+<body>
+  <div id="MyViewerDiv"></div>
+
+  <!-- The Viewer JS -->
+  <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.min.js"></script>
+  <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=v2.10"></script>
+
+  <!-- Developer JS -->
+  <script>
+      var myViewerDiv = document.getElementById('MyViewerDiv');
+      var viewer = new Autodesk.Viewing.Private.GuiViewer3D(myViewerDiv);
+      var options = {
+          'env' : 'Local',
+          'document' : './shaver/0.svf'
+      };
+      Autodesk.Viewing.Initializer(options, function() {
+        viewer.start(options.document, options);
+      });
+  </script>
 </body>
 
 </html>
