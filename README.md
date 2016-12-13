@@ -12,6 +12,10 @@ var options = {
     };
 ````
 
+
+To test locally, if you have python 2.x running on your computer, simple go to the folder with terminal/command line and type `python -m SimpleHTTPServer`.
+
+
 Here are a few models you can use, just replace the `'document'` value with the url provided:
 
 
