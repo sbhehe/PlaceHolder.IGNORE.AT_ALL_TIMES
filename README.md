@@ -1,7 +1,7 @@
 ## Offline viewing sample for Autodesk Viewer
 [![LMV](https://img.shields.io/badge/Viewer-v2.10-green.svg)](https://developer.autodesk.com/en/docs/viewer/v2/overview/)
 
-This is a viewer running local files. See [Demo](http://developer-autodesk.github.io/viewer-javascript-offline.sample) here.
+This is a viewer running local files. See [Demo](http://autodesk-forge.github.io/viewer-javascript-offline.sample/) here.
 
 ## Setup
 To replace the file to be viewed, change the value of `document` in `index.html`.
