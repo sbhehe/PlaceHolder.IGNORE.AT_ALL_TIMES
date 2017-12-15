@@ -1,5 +1,5 @@
 ## Offline viewing sample for Autodesk Viewer
-[![LMV](https://img.shields.io/badge/Viewer-v2.10-green.svg)](https://developer.autodesk.com/en/docs/viewer/v2/overview/)
+[![Viewer](https://img.shields.io/badge/Viewer-v3.3-green.svg)](https://developer.autodesk.com)
 
 This is a viewer running local files. See [Demo](http://autodesk-forge.github.io/viewer-javascript-offline.sample/) here.
 
