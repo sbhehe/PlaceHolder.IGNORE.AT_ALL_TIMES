@@ -30,7 +30,7 @@ __House__
 ```
 http://developer-autodesk.github.io/translated-models/dwfx-sample-house/f0224dd3-8767-45c1-ff99-5c9c881b9fee/0.svf
 ```
-![thumbnail](http://autodesk-forge.github.io/viewer-javascript-offline.sample/house.png)
+![thumbnail](/thumbnail.png)
 
 You can also download those translated models from this [GitHub repo](https://github.com/Developer-Autodesk/translated-models).
 
