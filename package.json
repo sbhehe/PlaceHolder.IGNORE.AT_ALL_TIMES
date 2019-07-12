@@ -1,0 +1,39 @@
+{
+  "name": "forge-viewer-web-component",
+  "version": "1.0.0",
+  "description": "Forge Viewer Web Component",
+  "main": "dist/forge-viewer-web-component.js",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production",
+    "watch": "rollup -c -w",
+    "pretest": "rollup -c",
+    "test": "mocha",
+    "prepublish": "BUILD=production npm test"
+  },
+  "repository": "dukedhx/forge-viewer-web-component",
+  "keywords": [
+    "forge",
+    "viewer",
+    "autodesk",
+    "web component",
+    "semantic web"
+  ],
+  "author": "Bryan Huang",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "homepage": "https://github.com/rollup/rollup-starter-project#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "rollup": "^0.43.0",
+    "rollup-plugin-istanbul": "^1.1.0",
+    "rollup-watch": "^4.0.0"
+  }
+}
